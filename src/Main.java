@@ -5,5 +5,7 @@ public class Main {
     public static void main(String[] args) {
         WordsChecker wordsChecker = new WordsChecker(text);
         wordsChecker.hasWord("Lorem");
+        wordsChecker.hasWord("sit");
+        wordsChecker.hasWord("Netology");
     }
 }
