@@ -11,13 +11,11 @@ public class WordsChecker {
         this.text = text;
         this.textwords = new HashSet<>(Arrays.asList(text.split(" ")));
     }
-    boolean hasWord (String word) {
-        for (String words : textwords) {
-            if (words.equals(word)) {
+    public boolean hasWord (String word) {
+            if (textwords.contains(word)) {
                 System.out.println("True");
                 return true;
             }
-        }
         System.out.println("False");
         return false;
 
